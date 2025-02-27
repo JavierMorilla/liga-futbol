@@ -1,0 +1,11 @@
+<p-sidebar [(visible)]="visible" position="left" [baseZIndex]="10000">
+    <h3>Menú</h3>
+    <ul>
+        <li><a routerLink="/dashboard">🏠 Inicio</a></li>
+        <li><a routerLink="/clasificaciones">📊 Clasificaciones</a></li>
+        <li><a routerLink="/estadisticas">📈 Estadísticas</a></li>
+        <li><a routerLink="/equipos">⚽ Equipos</a></li>
+    </ul>
+</p-sidebar>
+
+<button pButton type="button" label="Abrir Menú" icon="pi pi-bars" (click)="visible = true"></button>
